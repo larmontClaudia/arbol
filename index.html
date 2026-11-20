@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Espacio de Autoría - Árbol y Nubes</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Cielo celeste y piso verde pastel (pasto) -->
+    <a-sky color="#BEE9F7"></a-sky>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12" color="#B8E0C2"></a-plane>
+
+    <!-- Modelado propio de autoría: árbol -->
+    <a-entity gltf-model="arbol.glb" position="0 0 -4" rotation="0 0 0" scale="1 1 1"></a-entity>
+
+    <!-- Nube izquierda (esferas blancas muy cercanas) -->
+    <a-sphere position="-2.6 2.8 -4.5" radius="0.45" color="#FFFFFF"></a-sphere>
+    <a-sphere position="-2.2 2.95 -4.5" radius="0.55" color="#FFFFFF"></a-sphere>
+    <a-sphere position="-1.8 2.8 -4.5" radius="0.42" color="#FFFFFF"></a-sphere>
+    <a-sphere position="-2.2 2.7 -4.3" radius="0.38" color="#FFFFFF"></a-sphere>
+
+    <!-- Nube derecha (esferas blancas muy cercanas) -->
+    <a-sphere position="1.9 3.1 -4.8" radius="0.42" color="#FFFFFF"></a-sphere>
+    <a-sphere position="2.3 3.25 -4.8" radius="0.52" color="#FFFFFF"></a-sphere>
+    <a-sphere position="2.7 3.1 -4.8" radius="0.45" color="#FFFFFF"></a-sphere>
+    <a-sphere position="2.3 3.0 -4.6" radius="0.36" color="#FFFFFF"></a-sphere>
+  </a-scene>
+</body>
+</html>
